@@ -16,6 +16,7 @@ timer = None
 # ---------------------------- TIMER RESET ------------------------------- # 
 
 def reset():
+    button_start.config(state="active")
     global timer
     global reps
     reps=0
@@ -28,6 +29,7 @@ def reset():
 # ---------------------------- TIMER MECHANISM ------------------------------- # 
 
 def start_timer():
+    button_start.config(state="disabled")
     global reps
     reps+=1
 
